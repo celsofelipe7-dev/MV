@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móveis Rústicos MV | Sofisticação e Alma em Madeira</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Tipografia de Luxo e Modernidade */
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        
+        /* Paleta de Cores Baseada na Logo */
+        :root {
+            --color-black: #1A1A1A; /* Da logo "M" e texto principal */
+            --color-brown: #915F33; /* Da logo "V" e destaques/CTAs */
+            --color-grey-light: #F4F4F4; /* Da logo (círculo) e fundos sutil */
+            --color-bg-light: #FCFAF7; /* Fundo principal off-white suave */
+        }
+        
+        /* Ajustes específicos para as cores da logo */
+        .text-mv-black { color: var(--color-black); }
+        .text-mv-brown { color: var(--color-brown); }
+        .bg-mv-black { background-color: var(--color-black); }
+        .bg-mv-brown { background-color: var(--color-brown); }
+        .bg-mv-grey-light { background-color: var(--color-grey-light); }
+        .bg-mv-main { background-color: var(--color-bg-light); }
+        .border-mv-brown { border-color: var(--color-brown); }
+        
+        /* Efeito texturizado suave de fundo */
+        .wood-texture-bg {
+            background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+            background-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body class="wood-texture-bg text-mv-black bg-mv-main">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="logo.png" alt="Logo Móveis Rústicos MV" class="h-12 w-auto">
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#hero" class="hover:text-mv-brown transition">Início</a>
+                <a href="#produtos" class="hover:text-mv-brown transition">Catálogo</a>
+                <a href="#sobre" class="hover:text-mv-brown transition">Sobre Nós</a>
+                <a href="#contato" class="hover:text-mv-brown transition">Contato</a>
+            </div>
+            <a href="https://wa.me/SEU_TELEFONE_AQUI" class="hidden md:block bg-mv-brown text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-opacity-90 transition">
+                Chamar no WhatsApp
+            </a>
+            </div>
+    </nav>
+
+    <section id="hero" class="relative h-[85vh] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 z-0">
+            <img src="image_5.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Sala de estar com namoradeira rústica refinada">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
+        <div class="relative z-10 px-6 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">Sofisticação e Tradição na Madeira de Demolição</h1>
+            <p class="text-xl md:text-2xl mb-12 font-light max-w-2xl mx-auto leading-relaxed">
+                Cada peça é única, artesanal e sustentável. <span class="font-semibold text-mv-brown">Design atemporal</span> que traz o aconchego da natureza para o seu ambiente moderno.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#produtos" class="bg-mv-brown hover:bg-opacity-90 px-10 py-4 rounded-lg font-bold text-lg transition shadow-xl">
+                    Explorar Coleção
+                </a>
+                <a href="LINK_SUA_LOJA_MERCADO_LIVRE" class="bg-white text-mv-black hover:bg-stone-100 px-10 py-4 rounded-lg font-bold text-lg transition shadow-xl border-2 border-stone-100">
+                    Comprar no Mercado Livre
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-mv-grey-light">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="image_4.png" alt="Poltrona rústica individual com encosto em grade de metal" class="rounded-2xl shadow-xl">
+            </div>
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold text-mv-black">Móveis que Assinam a Sua História</h2>
+                <div class="flex items-center gap-4 border-b-2 border-mv-brown pb-4">
+                     <img src="logo.png" alt="Iniciais MV" class="h-10 w-auto">
+                     <p class="text-sm font-semibold tracking-wider text-mv-black">MADEIRA RÚSTICA DE LUXO</p>
+                </div>
+                <p class="text-lg text-stone-600 leading-relaxed font-light">
+                    A MV nasceu da paixão pela marcenaria artesanal e pela sustentabilidade. Utilizamos apenas <span class="font-semibold text-mv-brown">madeira de demolição certificada</span>, como peroba rosa e canela, tratadas para durar gerações. Nossas peças combinam a textura rica da madeira com detalhes em <span class="font-semibold text-mv-black">metal sofisticado</span> (como visto na poltrona ao lado), criando um rústico moderno e exclusivo. Cada peça é uma assinatura de bom gosto.
+                </p>
+                <a href="#contato" class="inline-block bg-mv-brown text-white px-8 py-3 rounded-full text-md font-bold hover:bg-opacity-90 transition">
+                    Saiba Mais Sobre Nós
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-mv-black mb-6">Peças Exclusivas em Destaque</h2>
+            <p class="text-xl text-stone-500 max-w-xl mx-auto font-light">Explore a nossa seleção de relíquias em madeira maciça, ideais para o seu lar ou área gourmet.</p>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="image_5.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Namoradeira refinada">
+                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">SOFISTICAÇÃO</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-mv-black mb-2">Namoradeira Demolição Elite</h3>
+                    <p class="text-stone-500 mb-6 text-sm flex-grow">Design refinado com encostos em ferro forjado e madeira rica.</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
+                        <a href="LINK_ML_NAMORADEIRA" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="image_3.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Mesa de jantar rústica com azulejos">
+                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">ÁREA GOURMET</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-mv-black mb-2">Mesa Jantar Gourmet Hidráulica</h3>
+                    <p class="text-stone-500 mb-6 text-sm flex-grow">Tampo rico com azulejos hidráulicos portugueses e madeira maciça.</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
+                        <a href="LINK_ML_MESA" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="image_2.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Par de cadeiras Adirondack no jardim">
+                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">EXTERIOR</div>
+                </div>
+                <div class="p-8 flex-grow flex flex-col">
+                    <h3 class="text-2xl font-bold text-mv-black mb-2">Par de Adirondack Relax</h3>
+                    <p class="text-stone-500 mb-6 text-sm flex-grow">Clássicas cadeiras Adirondack em par, madeira de lei tratada para jardim.</p>
+                    <div class="flex justify-between items-center mt-auto">
+                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
+                        <a href="LINK_ML_ADIRONDACK_PAR" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-24 bg-mv-grey-light wood-texture-bg">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+             <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold text-mv-black">Crie Espaços Inesquecíveis</h2>
+                <p class="text-lg text-stone-600 leading-relaxed font-light">
+                    Os móveis MV se adaptam. Do ambiente sofisticado de uma sala de estar (namoradeira image_5.png) à varanda gourmet vibrante (mesa image_3.png) ou ao jardim relaxante (Adirondack image_2.png), nossas peças criam o palco perfeito para momentos memoráveis. Use e abuse das texturas e traga a assinatura MV para a sua vida.
+                </p>
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-stone-100">
+                    <p class="text-stone-700 italic font-light mb-4">"A mesa rústica gourmet com os azulejos hidráulicos (image_3.png) foi a atração da nossa varanda. A qualidade da madeira é impressionante e o atendimento da MV foi exemplar. Recomendo muito!"</p>
+                    <p class="font-bold text-mv-black text-sm">João P., Cliente ML ⭐⭐⭐⭐⭐</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <img src="image_3.png" alt="Mesa gourmet ambientada" class="rounded-xl shadow-md col-span-2">
+                <img src="image_2.png" alt="Cadeiras de jardim ambientadas" class="rounded-xl shadow-md">
+                <img src="image_1.png" alt="Cadeira de jardim individual ambientada" class="rounded-xl shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-mv-black text-stone-300 py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            
+            <div class="space-y-4">
+                <img src="logo.png" alt="Logo Móveis MV" class="h-16 w-auto">
+                <p class="text-sm font-light leading-relaxed">Madeira Rústica de Luxo | MV. Tradição, Alma e Design Sustentável.</p>
+                <p class="text-xs text-stone-500">© 2026 Móveis Rústicos MV. Todos os direitos reservados.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <h4 class="text-white text-xl mb-6">Explorar</h4>
+                <a href="#hero" class="block hover:text-mv-brown transition text-sm">Coleção</a>
+                <a href="LINK_SUA_LOJA_MERCADO_LIVRE" class="block hover:text-mv-brown transition text-sm">Mercado Livre</a>
+                <a href="#sobre" class="block hover:text-mv-brown transition text-sm">Sustentabilidade</a>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-white text-xl mb-6">Contato</h4>
+                <p class="text-sm">WhatsApp: (XX) XXXXX-XXXX</p>
+                <p class="text-sm mt-2">Email: contato@moveisrusticosmv.com.br</p>
+                <p class="text-sm mt-2 text-stone-500">Enviamos para todo o Brasil.</p>
+            </div>
+
+             <div class="space-y-4">
+                <h4 class="text-white text-xl mb-6">Nossa Oficina</h4>
+                <p class="text-sm">Rua dos Marceneiros, 123</p>
+                <p class="text-sm">Área Industrial - CEP XXXXX-XXX</p>
+                <p class="text-sm mt-2">Agende uma visita!</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
