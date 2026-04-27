@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja | Móveis Rústicos de Luxo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+    <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="text-xl font-bold tracking-widest text-amber-900">MÓVEIS RÚSTICOS</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#produtos" class="hover:text-amber-700">Catálogo</a>
+            <a href="#sobre" class="hover:text-amber-700">Nossa Arte</a>
+            <a href="#contato" class="hover:text-amber-700">Contato</a>
+        </div>
+        <a href="https://wa.me/SEU_TELEFONE" class="bg-amber-800 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-amber-900 transition">Orçamento</a>
+    </nav>
+
+    <section class="relative h-[80vh] flex items-center justify-center text-center text-white bg-stone-900">
+        <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Móveis com História e Alma</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">Peças exclusivas em madeira de demolição que transformam qualquer ambiente em um refúgio de aconchego.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#produtos" class="bg-amber-800 hover:bg-amber-900 px-8 py-3 rounded-lg font-bold transition">Explorar Peças</a>
+                <a href="URL_DO_MERCADO_LIVRE" class="bg-white text-stone-900 hover:bg-stone-100 px-8 py-3 rounded-lg font-bold transition">Comprar no Mercado Livre</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Nossas Relíquias</h2>
+            <p class="text-stone-600">Fabricação artesanal com foco em cada detalhe da madeira.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100">
+                <div class="h-72 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl mb-2">Mesa Jantar Imperial</h3>
+                    <p class="text-stone-500 mb-6 text-sm">Madeira de demolição tratada com cera de abelha natural.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-amber-900">Sob Consulta</span>
+                        <a href="LINK_ML_PRODUTO" class="text-amber-800 font-semibold border-b-2 border-amber-800 pb-1">Ver no ML</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <footer id="contato" class="bg-stone-900 text-stone-400 py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h3 class="text-white text-xl mb-6">Madeira & Arte</h3>
+                <p class="text-sm leading-relaxed">Preservando a tradição da marcenaria rústica com sustentabilidade e design atemporal.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl mb-6">Contato</h3>
+                <p class="text-sm">WhatsApp: (XX) XXXXX-XXXX</p>
+                <p class="text-sm mt-2">Email: contato@seudominio.com.br</p>
+            </div>
+            <div>
+                <h3 class="text-white text-xl mb-6">Localização</h3>
+                <p class="text-sm">Enviamos via transportadora para todo o Brasil com seguro total.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
