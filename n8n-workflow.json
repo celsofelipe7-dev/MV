@@ -1,0 +1,253 @@
+{
+  "name": "Madeira Velha — Lead Capture + Follow-up",
+  "nodes": [
+    {
+      "id": "node-webhook",
+      "name": "Webhook — Receber Lead",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "madeira-velha-lead",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "node-viacep",
+      "name": "ViaCEP — Buscar Cidade",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [480, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://viacep.com.br/ws/{{ $json.body.cep }}/json/",
+        "options": {}
+      }
+    },
+    {
+      "id": "node-set-lead",
+      "name": "Formatar Lead",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3,
+      "position": [720, 300],
+      "parameters": {
+        "mode": "manual",
+        "fields": {
+          "values": [
+            { "name": "nome",         "value": "={{ $('Webhook — Receber Lead').item.json.body.nome }}" },
+            { "name": "whatsapp",     "value": "={{ $('Webhook — Receber Lead').item.json.body.whatsapp }}" },
+            { "name": "cep",          "value": "={{ $('Webhook — Receber Lead').item.json.body.cep }}" },
+            { "name": "cidade",       "value": "={{ $json.localidade || 'N/A' }}" },
+            { "name": "estado",       "value": "={{ $json.uf || 'N/A' }}" },
+            { "name": "produto",      "value": "={{ $('Webhook — Receber Lead').item.json.body.produto || 'Não informado' }}" },
+            { "name": "utm_source",   "value": "={{ $('Webhook — Receber Lead').item.json.body.utm_source || 'direto' }}" },
+            { "name": "utm_campaign", "value": "={{ $('Webhook — Receber Lead').item.json.body.utm_campaign || '' }}" },
+            { "name": "origem",       "value": "={{ $('Webhook — Receber Lead').item.json.body.origem || 'direto' }}" },
+            { "name": "status",       "value": "novo" },
+            { "name": "data_hora",    "value": "={{ $now.format('dd/MM/yyyy HH:mm') }}" },
+            { "name": "convertido",   "value": "não" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "node-sheets",
+      "name": "Google Sheets — Salvar Lead",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [960, 300],
+      "parameters": {
+        "operation": "append",
+        "documentId": "1dZsrtmdkXeiONfxXeKJ7ySIre0GEtEwAZLOSZdxADDo",
+        "sheetName": "Leads",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Nome":       "={{ $json.nome }}",
+            "WhatsApp":   "={{ $json.whatsapp }}",
+            "CEP":        "={{ $json.cep }}",
+            "Cidade":     "={{ $json.cidade }}",
+            "Estado":     "={{ $json.estado }}",
+            "Produto":    "={{ $json.produto }}",
+            "UTM Source": "={{ $json.utm_source }}",
+            "Campanha":   "={{ $json.utm_campaign }}",
+            "Origem":     "={{ $json.origem }}",
+            "Status":     "={{ $json.status }}",
+            "Data/Hora":  "={{ $json.data_hora }}",
+            "Convertido": "={{ $json.convertido }}"
+          }
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "node-whatsapp-admin",
+      "name": "WhatsApp — Notificar Admin",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1200, 300],
+      "notes": "Configure com Z-API ou Evolution API. Troque a URL e token.",
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.z-api.io/instances/SUA_INSTANCE/token/SEU_TOKEN/send-text",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "phone": "SEU_NUMERO_ADMIN",
+          "message": "=🪵 *Novo Lead — Madeira Velha*\n\n👤 *Nome:* {{ $json.nome }}\n📱 *WhatsApp:* {{ $json.whatsapp }}\n📍 *CEP:* {{ $json.cep }} — {{ $json.cidade }}/{{ $json.estado }}\n🛋️ *Produto:* {{ $json.produto }}\n📣 *Origem:* {{ $json.utm_source }} | {{ $json.utm_campaign }}\n🕐 *Horário:* {{ $json.data_hora }}\n\n👉 https://wa.me/55{{ $json.whatsapp }}"
+        }
+      }
+    },
+    {
+      "id": "node-respond",
+      "name": "Responder Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1440, 300],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{ \"ok\": true }",
+        "options": {
+          "responseCode": 200
+        }
+      }
+    },
+    {
+      "id": "node-schedule-followup",
+      "name": "Agenda — Todo dia 9h",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [240, 600],
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 9 * * 1-6" }]
+        }
+      }
+    },
+    {
+      "id": "node-read-sheets",
+      "name": "Google Sheets — Ler Leads",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [480, 600],
+      "parameters": {
+        "operation": "readRows",
+        "documentId": "1dZsrtmdkXeiONfxXeKJ7ySIre0GEtEwAZLOSZdxADDo",
+        "sheetName": "Leads",
+        "options": {}
+      }
+    },
+    {
+      "id": "node-filter-followup",
+      "name": "Filtrar — Leads sem contato há +48h",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [720, 600],
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "leftValue":  "={{ $json['Convertido'] }}",
+              "rightValue": "não",
+              "operator": { "type": "string", "operation": "equals" }
+            },
+            {
+              "leftValue":  "={{ $json['Status'] }}",
+              "rightValue": "follow-up-enviado",
+              "operator": { "type": "string", "operation": "notEquals" }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "node-followup-msg",
+      "name": "WhatsApp — Enviar Follow-up",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [960, 600],
+      "notes": "Dispara mensagem de follow-up 48h após o lead entrar.",
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.z-api.io/instances/SUA_INSTANCE/token/SEU_TOKEN/send-text",
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "phone": "={{ $json['WhatsApp'] }}",
+          "message": "=Oi {{ $json['Nome'] }}! 👋\n\nVi que você se interessou pelos nossos móveis em Peroba Rosa.\n\nTenho uma peça nova que acabou de chegar da demolição — acho que vai te surpreender.\n\nPosso te enviar as fotos? 📸"
+        }
+      }
+    },
+    {
+      "id": "node-update-status",
+      "name": "Google Sheets — Marcar Follow-up",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [1200, 600],
+      "notes": "Atualiza a coluna Status para evitar follow-up duplicado.",
+      "parameters": {
+        "operation": "update",
+        "documentId": "1dZsrtmdkXeiONfxXeKJ7ySIre0GEtEwAZLOSZdxADDo",
+        "sheetName": "Leads",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Status": "follow-up-enviado"
+          }
+        },
+        "where": {
+          "values": [
+            { "column": "WhatsApp", "value": "={{ $json['WhatsApp'] }}" }
+          ]
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Webhook — Receber Lead": {
+      "main": [[{ "node": "ViaCEP — Buscar Cidade", "type": "main", "index": 0 }]]
+    },
+    "ViaCEP — Buscar Cidade": {
+      "main": [[{ "node": "Formatar Lead", "type": "main", "index": 0 }]]
+    },
+    "Formatar Lead": {
+      "main": [[{ "node": "Google Sheets — Salvar Lead", "type": "main", "index": 0 }]]
+    },
+    "Google Sheets — Salvar Lead": {
+      "main": [[{ "node": "WhatsApp — Notificar Admin", "type": "main", "index": 0 }]]
+    },
+    "WhatsApp — Notificar Admin": {
+      "main": [[{ "node": "Responder Webhook", "type": "main", "index": 0 }]]
+    },
+    "Agenda — Todo dia 9h": {
+      "main": [[{ "node": "Google Sheets — Ler Leads", "type": "main", "index": 0 }]]
+    },
+    "Google Sheets — Ler Leads": {
+      "main": [[{ "node": "Filtrar — Leads sem contato há +48h", "type": "main", "index": 0 }]]
+    },
+    "Filtrar — Leads sem contato há +48h": {
+      "main": [[{ "node": "WhatsApp — Enviar Follow-up", "type": "main", "index": 0 }]]
+    },
+    "WhatsApp — Enviar Follow-up": {
+      "main": [[{ "node": "Google Sheets — Marcar Follow-up", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all"
+  },
+  "tags": [{ "name": "madeira-velha" }]
+}

@@ -3,207 +3,1006 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Móveis Rústicos MV | Sofisticação e Alma em Madeira</title>
+
+    <!-- SEO -->
+    <title>Mesa de Jantar em Peroba Rosa de Demolição | Madeira Velha</title>
+    <meta name="description" content="Móveis rústicos em Peroba Rosa legítima de demolição. Peças únicas com origem rastreável. Frete calculado por CEP. Ver no Mercado Livre.">
+    <meta name="keywords" content="mesa peroba rosa demolição, móveis rústicos madeira maciça, mesa jantar peroba rosa, móveis de demolição premium">
+    <link rel="canonical" href="https://www.mercadolivre.com.br/pagina/madeiravelha#from=share_eshop">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Peroba Rosa Legítima — Não é réplica, é original | Madeira Velha">
+    <meta property="og:description" content="Móveis em madeira de demolição com peso real, veios únicos e origem rastreável. Cada peça é irrepetível.">
+    <meta property="og:image" content="./og_image.jpg">
+    <meta property="og:type" content="websitehttps://www.mercadolivre.com.br/pagina/madeiravelha#from=share_eshop">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- GA4 — substitua G-XXXXXXXXXX pelo seu Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KF3C8EGWBE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-KF3C8EGWBE', { currency: 'BRL' });
+    </script>
+
+    <!-- Meta Pixel — substitua SEU_PIXEL_ID pelo seu Pixel ID -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'SEU_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Tipografia de Luxo e Modernidade */
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-        
-        /* Paleta de Cores Baseada na Logo */
         :root {
-            --color-black: #1A1A1A; /* Da logo "M" e texto principal */
-            --color-brown: #915F33; /* Da logo "V" e destaques/CTAs */
-            --color-grey-light: #F4F4F4; /* Da logo (círculo) e fundos sutil */
-            --color-bg-light: #FCFAF7; /* Fundo principal off-white suave */
+            --mv-brown: #915F33;
+            --mv-black: #1A1A1A;
+            --mv-cream: #FCFAF7;
         }
-        
-        /* Ajustes específicos para as cores da logo */
-        .text-mv-black { color: var(--color-black); }
-        .text-mv-brown { color: var(--color-brown); }
-        .bg-mv-black { background-color: var(--color-black); }
-        .bg-mv-brown { background-color: var(--color-brown); }
-        .bg-mv-grey-light { background-color: var(--color-grey-light); }
-        .bg-mv-main { background-color: var(--color-bg-light); }
-        .border-mv-brown { border-color: var(--color-brown); }
-        
-        /* Efeito texturizado suave de fundo */
-        .wood-texture-bg {
-            background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
-            background-blend-mode: multiply;
-        }
+        * { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--mv-cream); color: var(--mv-black); }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .bg-mv-brown  { background-color: var(--mv-brown); }
+        .text-mv-brown{ color: var(--mv-brown); }
+        .bg-mv-black  { background-color: var(--mv-black); }
+        .border-mv-brown { border-color: var(--mv-brown); }
+        .shadow-premium  { box-shadow: 0 25px 50px -12px rgba(145,95,51,0.18); }
+
+        /* Entrance animation */
+        .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* Product card weight badge on hover */
+        .weight-badge { opacity: 0; transform: translateY(-6px); transition: all 0.3s ease; }
+        .product-card:hover .weight-badge { opacity: 1; transform: translateY(0); }
+
+        /* FAQ accordion */
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-item.open .faq-answer { max-height: 300px; }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform 0.3s ease; }
     </style>
 </head>
-<body class="wood-texture-bg text-mv-black bg-mv-main">
+<body class="antialiased">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center">
-                <img src="logo.png" alt="Logo Móveis Rústicos MV" class="h-12 w-auto">
-            </a>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
-                <a href="#hero" class="hover:text-mv-brown transition">Início</a>
-                <a href="#produtos" class="hover:text-mv-brown transition">Catálogo</a>
-                <a href="#sobre" class="hover:text-mv-brown transition">Sobre Nós</a>
-                <a href="#contato" class="hover:text-mv-brown transition">Contato</a>
-            </div>
-            <a href="https://wa.me/SEU_TELEFONE_AQUI" class="hidden md:block bg-mv-brown text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-opacity-90 transition">
-                Chamar no WhatsApp
-            </a>
-            </div>
-    </nav>
+<!-- SVG symbol defs reutilizados nos badges de produto -->
+<svg class="hidden" aria-hidden="true">
+    <defs>
+        <symbol id="icon-ruler" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="10" rx="1.5"/>
+            <line x1="6"  y1="7" x2="6"  y2="11"/>
+            <line x1="10" y1="7" x2="10" y2="13"/>
+            <line x1="14" y1="7" x2="14" y2="11"/>
+            <line x1="18" y1="7" x2="18" y2="13"/>
+        </symbol>
+        <symbol id="icon-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="3" x2="12" y2="21"/>
+            <line x1="3"  y1="3" x2="21" y2="3"/>
+            <path d="M6.5 3 L4 9 a2.5 2.5 0 0 0 5 0 Z"/>
+            <path d="M17.5 3 L15 9 a2.5 2.5 0 0 0 5 0 Z"/>
+            <line x1="9" y1="21" x2="15" y2="21"/>
+        </symbol>
+        <symbol id="icon-wood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21c-4-2-7-6-7-9a7 7 0 0 1 14 0c0 3-3 7-7 9z"/>
+            <line x1="12" y1="21" x2="12" y2="14"/>
+            <line x1="9"  y1="17" x2="15" y2="17"/>
+        </symbol>
+    </defs>
+</svg>
 
-    <section id="hero" class="relative h-[85vh] flex items-center justify-center text-center text-white">
-        <div class="absolute inset-0 z-0">
-            <img src="image_5.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Sala de estar com namoradeira rústica refinada">
-            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<!-- ================================================================
+     NAVEGAÇÃO
+     ================================================================ -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="logo.png" alt="Madeira Velha" class="h-12 w-auto">
+            <div class="hidden sm:block">
+                <p class="font-bold text-lg leading-none tracking-tighter" style="font-family:'Playfair Display',serif;">MADEIRA VELHA</p>
+                <p class="text-[10px] uppercase tracking-widest text-mv-brown font-semibold">Móveis Rústicos</p>
+            </div>
         </div>
-        <div class="relative z-10 px-6 max-w-4xl">
-            <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">Sofisticação e Tradição na Madeira de Demolição</h1>
-            <p class="text-xl md:text-2xl mb-12 font-light max-w-2xl mx-auto leading-relaxed">
-                Cada peça é única, artesanal e sustentável. <span class="font-semibold text-mv-brown">Design atemporal</span> que traz o aconchego da natureza para o seu ambiente moderno.
+        <div class="flex items-center gap-4">
+            <a href="#produtos"   class="hidden md:block text-stone-600 hover:text-mv-brown text-sm font-semibold transition">Ver Peças</a>
+            <a href="#formulario" class="hidden md:block text-stone-600 hover:text-mv-brown text-sm font-semibold transition">Calcular Frete</a>
+            <a href="https://wa.me/5532991643152"
+               onclick="trackEvent('whatsapp_nav_click')"
+               class="bg-mv-brown text-white px-5 py-2.5 rounded-full text-sm font-bold shadow hover:bg-opacity-90 transition">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<header class="relative h-[85vh] flex items-center overflow-hidden">
+    <img src="banner_principal.jpg"
+         class="absolute inset-0 w-full h-full object-cover"
+         alt="Mesa de jantar em Peroba Rosa de demolição">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div class="max-w-2xl">
+            <span class="inline-block text-amber-400 text-xs tracking-widest uppercase font-bold mb-4 border border-amber-400/40 px-3 py-1 rounded-full">
+                Madeira de Demolição · Origem Rastreável
+            </span>
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
+                Peroba Rosa<br>
+                <span class="text-amber-400">Legítima.</span><br>
+                <span class="text-3xl md:text-4xl font-bold text-stone-200">Ou você não paga.</span>
+            </h1>
+            <p class="text-stone-300 text-lg md:text-xl mb-10 leading-relaxed">
+                Sem réplicas. Sem MDF pintado de marrom.<br>
+                Madeira que <strong class="text-white">pesa, cheira e dura gerações.</strong>
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="#produtos" class="bg-mv-brown hover:bg-opacity-90 px-10 py-4 rounded-lg font-bold text-lg transition shadow-xl">
-                    Explorar Coleção
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#produtos"
+                   onclick="trackEvent('hero_cta_produtos')"
+                   class="bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-4 rounded-lg text-lg transition-all hover:scale-105 shadow-xl text-center">
+                    Ver Peças Disponíveis
                 </a>
-                <a href="LINK_SUA_LOJA_MERCADO_LIVRE" class="bg-white text-mv-black hover:bg-stone-100 px-10 py-4 rounded-lg font-bold text-lg transition shadow-xl border-2 border-stone-100">
-                    Comprar no Mercado Livre
+                <a href="#formulario"
+                   onclick="trackEvent('hero_cta_frete')"
+                   class="border-2 border-white/70 text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg text-lg transition-all font-bold text-center">
+                    Calcular Frete  
                 </a>
             </div>
         </div>
-    </section>
+    </div>
+</header>
 
-    <section id="sobre" class="py-24 bg-mv-grey-light">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<!-- ================================================================
+     BARRA DE NÚMEROS
+     ================================================================ -->
+<section class="bg-mv-black text-white py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between items-center gap-8 text-center">
+        <div>
+            <p class="text-2xl font-bold text-amber-400">+200</p>
+            <p class="text-[11px] uppercase tracking-widest text-stone-400">Peças entregues</p>
+        </div>
+        <div class="hidden md:block w-px h-8 bg-stone-700"></div>
+        <div>
+            <p class="text-2xl font-bold text-amber-400">100%</p>
+            <p class="text-[11px] uppercase tracking-widest text-stone-400">Peroba Rosa maciça</p>
+        </div>
+        <div class="hidden md:block w-px h-8 bg-stone-700"></div>
+        <div>
+            <p class="text-2xl font-bold text-amber-400">5★</p>
+            <p class="text-[11px] uppercase tracking-widest text-stone-400">No Mercado Livre</p>
+        </div>
+        <div class="hidden md:block w-px h-8 bg-stone-700"></div>
+        <div>
+            <p class="text-2xl font-bold text-amber-400">Brasil todo</p>
+            <p class="text-[11px] uppercase tracking-widest text-stone-400">Entregamos</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================
+     OBJECTION KILLERS
+     ================================================================ -->
+<section class="py-16 bg-white border-b border-stone-100">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+
+        <div class="flex flex-col items-center fade-in">
+            <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-5">
+                <svg class="w-8 h-8 text-mv-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                </svg>
+            </div>
+            <h4 class="font-bold text-xl mb-2">Compra 100% Segura</h4>
+            <p class="text-stone-500 text-sm leading-relaxed">Finalize pelo Mercado Livre com proteção total do Mercado Pago. Sem risco, sem surpresa.</p>
+        </div>
+
+        <div class="flex flex-col items-center border-y md:border-y-0 md:border-x border-stone-100 py-10 md:py-0 fade-in">
+            <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-5">
+                <svg class="w-8 h-8 text-mv-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+                </svg>
+            </div>
+            <h4 class="font-bold text-xl mb-2">Frete Especializado</h4>
+            <p class="text-stone-500 text-sm leading-relaxed">Logística para carga pesada com seguro para todo o Brasil. Calculamos antes de fechar o pedido.</p>
+        </div>
+
+        <div class="flex flex-col items-center fade-in">
+            <div class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-5">
+                <svg class="w-8 h-8 text-mv-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+                </svg>
+            </div>
+            <h4 class="font-bold text-xl mb-2">Madeira Maciça, Sempre</h4>
+            <p class="text-stone-500 text-sm leading-relaxed">Zero MDF, zero compensado, zero tinta marrom. Só Peroba Rosa maciça de demolição com tratamento comprovado.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================================================================
+     PROVA FÍSICA — diferencial único
+     ================================================================ -->
+<section class="bg-stone-900 text-white py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <span class="text-amber-400 text-xs tracking-widest uppercase font-bold">Educação que converte</span>
+            <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4">Como identificar<br>Peroba Rosa legítima</h2>
+            <p class="text-stone-400 max-w-xl mx-auto">Você tem o direito de saber o que está comprando. Esses são os três testes que nenhum vendedor de réplica quer que você faça.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="border border-amber-500/20 bg-stone-800/50 p-8 rounded-2xl fade-in">
+                <div class="w-12 h-12 mb-5 text-amber-400">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="4" x2="12" y2="20"/>
+                        <line x1="4"  y1="4" x2="20" y2="4"/>
+                        <path d="M6.5 4 L4 10 a2.5 2.5 0 0 0 5 0 Z"/>
+                        <path d="M17.5 4 L15 10 a2.5 2.5 0 0 0 5 0 Z"/>
+                        <line x1="9" y1="20" x2="15" y2="20"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl text-amber-400 mb-3">Teste do Peso</h3>
+                <p class="text-stone-300 text-sm leading-relaxed mb-4">
+                    Uma mesa de 2m × 90cm em Peroba Rosa legítima pesa entre <strong class="text-white">80 e 120kg</strong>.
+                    Se o vendedor não informar o peso — pergunte. Se desviar da resposta — é outra madeira.
+                </p>
+                <p class="text-amber-400/60 text-xs italic">Réplica em MDF pesa ~18kg. Diferença de 5x.</p>
+            </div>
+
+            <div class="border border-amber-500/20 bg-stone-800/50 p-8 rounded-2xl fade-in">
+                <div class="w-12 h-12 mb-5 text-amber-400">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 20c0-2 2-2 2-4s-2-2-2-4 2-2 2-4"/>
+                        <path d="M15 20c0-2 2-2 2-4s-2-2-2-4 2-2 2-4"/>
+                        <path d="M12 20c0-2 2-2 2-4s-2-2-2-4 2-2 2-4"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl text-amber-400 mb-3">Teste do Cheiro</h3>
+                <p class="text-stone-300 text-sm leading-relaxed mb-4">
+                    Peroba Rosa recém-lixada tem um aroma característico, levemente adocicado e amadeirado.
+                    <strong class="text-white">Inconfundível.</strong> Madeira pintada cheira a tinta. Laminado cheira a cola.
+                </p>
+                <p class="text-amber-400/60 text-xs italic">Peça uma foto do corte transversal sem verniz.</p>
+            </div>
+
+            <div class="border border-amber-500/20 bg-stone-800/50 p-8 rounded-2xl fade-in">
+                <div class="w-12 h-12 mb-5 text-amber-400">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21c-4.5 0-8-3.5-8-8 0-2 .8-4 2-5.5"/>
+                        <path d="M12 21c4.5 0 8-3.5 8-8 0-2-.8-4-2-5.5"/>
+                        <path d="M8 8c1-1.5 2.5-2.5 4-2.5s3 1 4 2.5"/>
+                        <path d="M9.5 10.5c.7-1 1.5-1.5 2.5-1.5s1.8.5 2.5 1.5"/>
+                        <circle cx="12" cy="13" r="1.5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3 class="font-bold text-xl text-amber-400 mb-3">Teste dos Veios</h3>
+                <p class="text-stone-300 text-sm leading-relaxed mb-4">
+                    O padrão de veios de Peroba Rosa nunca se repete — é como uma digital.
+                    Se dois móveis do mesmo vendedor têm veios idênticos, <strong class="text-white">é impressão ou laminado.</strong>
+                </p>
+                <p class="text-amber-400/60 text-xs italic">Nossos móveis têm registro fotográfico de cada peça.</p>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-stone-400 text-sm">Nossos móveis passam nos três testes. Sempre.</p>
+            <a href="#produtos" class="inline-block mt-4 bg-amber-500 hover:bg-amber-400 text-black font-bold px-8 py-3 rounded-lg transition-all">
+                Ver peças disponíveis →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================
+     PRODUTOS
+     ================================================================ -->
+<section id="produtos" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 fade-in">
+        <span class="text-mv-brown text-xs tracking-widest uppercase font-bold">Disponibilidade Limitada</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4">Peças de Assinatura</h2>
+        <p class="text-stone-500 max-w-lg mx-auto">Cada peça é produzida uma única vez. Quando a tora acaba, aquele padrão de veios nunca mais se repete.</p>
+    </div>
+
+    <!-- Grid populado via JS — skeletons visíveis enquanto carrega -->
+    <div id="produtos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Skeleton 1 -->
+        <div class="skeleton-card bg-white rounded-3xl overflow-hidden shadow-premium animate-pulse">
+            <div class="h-72 bg-stone-200"></div>
+            <div class="p-7 space-y-3">
+                <div class="h-6 bg-stone-200 rounded w-3/4"></div>
+                <div class="h-4 bg-stone-100 rounded w-1/2"></div>
+                <div class="h-4 bg-stone-100 rounded w-full"></div>
+                <div class="h-4 bg-stone-100 rounded w-5/6"></div>
+                <div class="h-12 bg-stone-200 rounded-xl mt-4"></div>
+                <div class="h-10 bg-stone-100 rounded-xl"></div>
+            </div>
+        </div>
+
+        <!-- Skeleton 2 -->
+        <div class="skeleton-card bg-white rounded-3xl overflow-hidden shadow-premium animate-pulse">
+            <div class="h-72 bg-stone-200"></div>
+            <div class="p-7 space-y-3">
+                <div class="h-6 bg-stone-200 rounded w-2/3"></div>
+                <div class="h-4 bg-stone-100 rounded w-1/2"></div>
+                <div class="h-4 bg-stone-100 rounded w-full"></div>
+                <div class="h-4 bg-stone-100 rounded w-4/5"></div>
+                <div class="h-12 bg-stone-200 rounded-xl mt-4"></div>
+                <div class="h-10 bg-stone-100 rounded-xl"></div>
+            </div>
+        </div>
+
+        <!-- Skeleton 3 -->
+        <div class="skeleton-card bg-white rounded-3xl overflow-hidden shadow-premium animate-pulse">
+            <div class="h-72 bg-stone-200"></div>
+            <div class="p-7 space-y-3">
+                <div class="h-6 bg-stone-200 rounded w-3/4"></div>
+                <div class="h-4 bg-stone-100 rounded w-1/2"></div>
+                <div class="h-4 bg-stone-100 rounded w-full"></div>
+                <div class="h-4 bg-stone-100 rounded w-5/6"></div>
+                <div class="h-12 bg-stone-200 rounded-xl mt-4"></div>
+                <div class="h-10 bg-stone-100 rounded-xl"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="text-center text-stone-400 text-sm mt-12">
+        Tem outro produto em mente?
+        <a href="https://www.mercadolivre.com.br/pagina/madeiravelha#from=share_eshop" class="text-mv-brown font-semibold hover:underline">Acesse nossa loja</a>
+        e verificamos o estoque.
+    </p>
+</section>
+
+<!-- ================================================================
+     PROCESSO — da demolição à sua casa
+     ================================================================ -->
+<section class="py-24 bg-stone-50 border-y border-stone-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <span class="text-mv-brown text-xs tracking-widest uppercase font-bold">Transparência total</span>
+            <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4">Da demolição à sua casa</h2>
+            <p class="text-stone-500 max-w-lg mx-auto">Cada etapa é feita com cuidado para que você receba exatamente o que foi mostrado.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
+            <div class="flex flex-col items-center fade-in">
+                <div class="w-16 h-16 bg-mv-brown text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+                <h4 class="font-bold mb-2">Seleção</h4>
+                <p class="text-stone-500 text-xs leading-relaxed">Visitamos demolições e escolhemos apenas toras com estrutura perfeita.</p>
+            </div>
+            <div class="flex flex-col items-center fade-in">
+                <div class="w-16 h-16 bg-mv-brown text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
+                <h4 class="font-bold mb-2">Tratamento</h4>
+                <p class="text-stone-500 text-xs leading-relaxed">Secagem e tratamento contra cupins e fungos antes de qualquer corte.</p>
+            </div>
+            <div class="flex flex-col items-center fade-in">
+                <div class="w-16 h-16 bg-mv-brown text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+                <h4 class="font-bold mb-2">Produção</h4>
+                <p class="text-stone-500 text-xs leading-relaxed">Cada peça é produzida individualmente. Não temos linha de produção — temos ateliê.</p>
+            </div>
+            <div class="flex flex-col items-center fade-in">
+                <div class="w-16 h-16 bg-mv-brown text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">4</div>
+                <h4 class="font-bold mb-2">Documentação</h4>
+                <p class="text-stone-500 text-xs leading-relaxed">Antes do envio: peso real, dimensões e fotos.</p>
+            </div>
+            <div class="flex flex-col items-center fade-in">
+                <div class="w-16 h-16 bg-amber-500 text-black rounded-full flex items-center justify-center text-xl font-bold mb-4">5</div>
+                <h4 class="font-bold mb-2">Entrega</h4>
+                <p class="text-stone-500 text-xs leading-relaxed">Transportadora especializada em carga pesada. Seguro incluso.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================
+     PROVA SOCIAL
+     ================================================================ -->
+<section class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 fade-in">
+        <span class="text-mv-brown text-xs tracking-widest uppercase font-bold">O que dizem os clientes</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4">Relatos de quem recebeu</h2>
+        <p class="text-stone-500">Depoimentos reais do Mercado Livre. Com detalhes físicos — porque especificidade é credibilidade.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white border border-stone-100 p-8 rounded-2xl shadow-sm fade-in">
+            <div class="flex gap-0.5 text-amber-400 mb-4 text-lg">★★★★★</div>
+            <blockquote class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                "A mesa chegou numa carreta. Precisei de 4 homens pra subir. Quando coloquei o nível: zero desnivelamento. Compra mais honesta que já fiz no ML em 10 anos."
+            </blockquote>
+            <div class="border-t border-stone-100 pt-4">
+                <p class="font-bold text-sm">Carlos M.</p>
+                <p class="text-stone-400 text-xs">São Paulo, SP · Mesa 2,40m · Mercado Livre ✓</p>
+            </div>
+        </div>
+
+        <div class="bg-white border border-stone-100 p-8 rounded-2xl shadow-sm fade-in">
+            <div class="flex gap-0.5 text-amber-400 mb-4 text-lg">★★★★★</div>
+            <blockquote class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                "Comprei achando que ia ser parecido com fotos. Chegou melhor. O cheiro da madeira é incrível, os veios são únicos. Minha sogra perguntou quanto paguei e não acreditou."
+            </blockquote>
+            <div class="border-t border-stone-100 pt-4">
+                <p class="font-bold text-sm">Fernanda L.</p>
+                <p class="text-stone-400 text-xs">Curitiba, PR · Namoradeira · Mercado Livre ✓</p>
+            </div>
+        </div>
+
+        <div class="bg-white border border-stone-100 p-8 rounded-2xl shadow-sm fade-in">
+            <div class="flex gap-0.5 text-amber-400 mb-4 text-lg">★★★★★</div>
+            <blockquote class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                "Frete foi o único susto — mas o vendedor avisou antes e ajudou a calcular. Duas poltronas chegaram perfeitas, embaladas como obra de arte. Vale cada centavo."
+            </blockquote>
+            <div class="border-t border-stone-100 pt-4">
+                <p class="font-bold text-sm">Roberto A.</p>
+                <p class="text-stone-400 text-xs">Rio de Janeiro, RJ · 2× Adirondack · Mercado Livre ✓</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+        <a href="https://www.mercadolivre.com.br/pagina/madeiravelha#from=share_eshop" class="text-mv-brown text-sm font-semibold hover:underline">
+            Ver loja completa no Mercado Livre →
+        </a>
+    </div>
+</section>
+
+<!-- ================================================================
+     FAQ
+     ================================================================ -->
+<section class="py-24 bg-stone-50 border-y border-stone-100">
+    <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <span class="text-mv-brown text-xs tracking-widest uppercase font-bold">Perguntas Frequentes</span>
+            <h2 class="text-4xl font-bold mt-3">Tire suas dúvidas</h2>
+        </div>
+
+        <div class="space-y-4">
+
+            <div class="faq-item bg-white border border-stone-100 rounded-2xl overflow-hidden cursor-pointer fade-in" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-6">
+                    <h4 class="font-bold text-base pr-4">Como funciona o cálculo de frete?</h4>
+                    <svg class="faq-chevron w-5 h-5 text-mv-brown flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p class="text-stone-500 text-sm leading-relaxed px-6 pb-6">
+                        O frete é calculado com base no seu CEP e no peso real da peça. Trabalhamos com transportadoras especializadas em carga pesada (acima de 80kg). Preencha o formulário abaixo com seu CEP — em até 5 minutos entramos em contato via WhatsApp com o custo exato, antes de qualquer pagamento.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white border border-stone-100 rounded-2xl overflow-hidden cursor-pointer fade-in" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-6">
+                    <h4 class="font-bold text-base pr-4">Como sei que é Peroba Rosa legítima?</h4>
+                    <svg class="faq-chevron w-5 h-5 text-mv-brown flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p class="text-stone-500 text-sm leading-relaxed px-6 pb-6">
+                        Documentamos o peso real de cada peça (uma mesa 2m pesa 80–120kg), fornecemos fotos do corte transversal mostrando os veios naturais, e toda madeira tem nota fiscal com espécie declarada. Se tiver dúvida, pode pedir um vídeo ao vivo antes de comprar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white border border-stone-100 rounded-2xl overflow-hidden cursor-pointer fade-in" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-6">
+                    <h4 class="font-bold text-base pr-4">Posso personalizar tamanho ou acabamento?</h4>
+                    <svg class="faq-chevron w-5 h-5 text-mv-brown flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p class="text-stone-500 text-sm leading-relaxed px-6 pb-6">
+                        Sim, com ressalvas. Trabalhamos com madeira de demolição, então o tamanho depende da tora disponível. Acabamentos (verniz natural, encerado, matte) são personalizáveis. Converse pelo WhatsApp sobre o seu projeto.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white border border-stone-100 rounded-2xl overflow-hidden cursor-pointer fade-in" onclick="toggleFaq(this)">
+                <div class="flex justify-between items-center p-6">
+                    <h4 class="font-bold text-base pr-4">Qual a garantia do produto?</h4>
+                    <svg class="faq-chevron w-5 h-5 text-mv-brown flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </div>
+                <div class="faq-answer">
+                    <p class="text-stone-500 text-sm leading-relaxed px-6 pb-6">
+                        Garantia estrutural de 12 meses contra defeitos de fabricação. Além disso, Peroba Rosa de demolição tratada não racha, não empena e não cria marcas com uso normal. A garantia real é a madeira — foram 80+ anos em pé antes de chegar até você.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================================================================
+     FORMULÁRIO DE LEAD — seção dedicada
+     ================================================================ -->
+<section id="formulario" class="py-24 bg-mv-black text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <span class="text-amber-400 text-xs tracking-widest uppercase font-bold">Sem compromisso</span>
+        <h2 class="text-4xl md:text-5xl font-bold mt-3 mb-4">
+            Calcule o frete para<br>a sua cidade
+        </h2>
+        <p class="text-stone-400 mb-12 max-w-lg mx-auto">
+            Preencha abaixo. Em até 5 minutos entramos em contato via WhatsApp com o custo exato — antes de qualquer pagamento.
+        </p>
+
+        <form id="leadFormSection" class="bg-stone-900 border border-stone-700 rounded-3xl p-8 md:p-12 max-w-lg mx-auto text-left">
+            <div class="space-y-5">
+
+                <div>
+                    <label class="text-[11px] font-bold uppercase tracking-widest text-stone-400 block mb-2">Seu Nome</label>
+                    <input type="text" name="nome" placeholder="Ex: Carlos Silva" required
+                           class="w-full p-4 bg-stone-800 border border-stone-600 text-white rounded-xl outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition placeholder-stone-500">
+                </div>
+
+                <div>
+                    <label class="text-[11px] font-bold uppercase tracking-widest text-stone-400 block mb-2">WhatsApp</label>
+                    <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required
+                           class="w-full p-4 bg-stone-800 border border-stone-600 text-white rounded-xl outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition placeholder-stone-500">
+                </div>
+
+                <div>
+                    <label class="text-[11px] font-bold uppercase tracking-widest text-stone-400 block mb-2">Seu CEP</label>
+                    <div class="relative">
+                        <input type="text" name="cep" id="cepInputSection" placeholder="00000-000" required maxlength="9"
+                               class="w-full p-4 bg-stone-800 border border-stone-600 text-white rounded-xl outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition placeholder-stone-500">
+                        <span id="cepFeedbackSection" class="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-bold"></span>
+                    </div>
+                    <p id="cepCitySection" class="text-amber-400 text-xs mt-1.5 ml-1 h-4"></p>
+                </div>
+
+                <div>
+                    <label class="text-[11px] font-bold uppercase tracking-widest text-stone-400 block mb-2">Produto de Interesse</label>
+                    <select name="produto"
+                            class="w-full p-4 bg-stone-800 border border-stone-600 text-white rounded-xl outline-none focus:border-amber-500 transition">
+                        <option value="">Selecione uma peça...</option>
+                        <option value="Conjunto de Mesa com Bancos">Conjunto de Mesa com Bancos — Peroba Rosa</option>
+                        <option value="Cama Turca King Size">Cama Turca King Size — Madeira Maciça</option>
+                        <option value="Rack Oval em Peroba Rosa">Rack Oval em Peroba Rosa</option>
+                        <option value="Outro / Personalizado">Outro / Personalizado</option>
+                    </select>
+                </div>
+
+                <!-- UTM fields hidden -->
+                <input type="hidden" name="utm_source"   id="utmSourceSection">
+                <input type="hidden" name="utm_medium"   id="utmMediumSection">
+                <input type="hidden" name="utm_campaign" id="utmCampaignSection">
+                <input type="hidden" name="origem"       id="origemSection">
+
+                <button type="submit"
+                        class="w-full bg-amber-500 hover:bg-amber-400 text-black font-bold py-5 rounded-xl text-lg transition-all hover:scale-[1.02] active:scale-95 shadow-xl">
+                    Ver custo de entrega no WhatsApp →
+                </button>
+
+                <p class="text-stone-500 text-xs text-center">Seus dados são usados exclusivamente para calcular o frete.</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer class="bg-mv-black border-t border-stone-800 text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
             <div>
-                <img src="image_4.png" alt="Poltrona rústica individual com encosto em grade de metal" class="rounded-2xl shadow-xl">
-            </div>
-            <div class="space-y-8">
-                <h2 class="text-4xl md:text-5xl font-bold text-mv-black">Móveis que Assinam a Sua História</h2>
-                <div class="flex items-center gap-4 border-b-2 border-mv-brown pb-4">
-                     <img src="logo.png" alt="Iniciais MV" class="h-10 w-auto">
-                     <p class="text-sm font-semibold tracking-wider text-mv-black">MADEIRA RÚSTICA DE LUXO</p>
-                </div>
-                <p class="text-lg text-stone-600 leading-relaxed font-light">
-                    A MV nasceu da paixão pela marcenaria artesanal e pela sustentabilidade. Utilizamos apenas <span class="font-semibold text-mv-brown">madeira de demolição certificada</span>, como peroba rosa e canela, tratadas para durar gerações. Nossas peças combinam a textura rica da madeira com detalhes em <span class="font-semibold text-mv-black">metal sofisticado</span> (como visto na poltrona ao lado), criando um rústico moderno e exclusivo. Cada peça é uma assinatura de bom gosto.
+                <img src="logo.png" alt="Madeira Velha" class="h-16 mb-5 opacity-80">
+                <p class="text-stone-400 text-sm max-w-xs leading-relaxed">
+                    Especialistas em móveis de demolição premium. Cada peça é única, cada entrega é uma relíquia.
                 </p>
-                <a href="#contato" class="inline-block bg-mv-brown text-white px-8 py-3 rounded-full text-md font-bold hover:bg-opacity-90 transition">
-                    Saiba Mais Sobre Nós
+            </div>
+            <div class="grid grid-cols-2 gap-x-16 gap-y-4 text-sm">
+                <a href="#produtos"   class="text-stone-400 hover:text-amber-400 transition font-medium">Ver Coleção</a>
+                <a href="#formulario" class="text-stone-400 hover:text-amber-400 transition font-medium">Calcular Frete</a>
+                <a href="https://wa.me/5532991643152" class="text-stone-400 hover:text-amber-400 transition font-medium">WhatsApp</a>
+                <a href="LINK_ML_PERFIL" class="text-stone-400 hover:text-amber-400 transition font-medium">Mercado Livre</a>
+            </div>
+        </div>
+        <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-600">
+            <p>© 2026 Madeira Velha · Todos os direitos reservados.</p>
+            <p>Peroba Rosa de Demolição · Origem Rastreável · Brasil</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ================================================================
+     MODAL DE LEAD
+     ================================================================ -->
+<div id="leadModal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] flex items-center justify-center p-6">
+    <div class="bg-white rounded-3xl p-8 md:p-10 max-w-md w-full relative shadow-2xl">
+        <button onclick="closeModal()"
+                class="absolute top-5 right-5 text-stone-400 hover:text-stone-900 text-2xl w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-100 transition">×</button>
+
+        <div class="text-center mb-8">
+            <span class="text-3xl">🚚</span>
+            <h2 class="text-2xl font-bold mt-2 mb-1">Calcular Frete</h2>
+            <p class="text-stone-400 text-sm">Informe seu CEP. Em até 2h úteis entramos em contato.</p>
+            <p id="modalProductName" class="text-mv-brown text-xs font-semibold uppercase tracking-wider mt-2"></p>
+        </div>
+
+        <form id="n8nForm" class="space-y-4">
+            <input type="hidden" name="produto"       id="modalProduto">
+            <input type="hidden" name="utm_source"    id="modalUtmSource">
+            <input type="hidden" name="utm_medium"    id="modalUtmMedium">
+            <input type="hidden" name="utm_campaign"  id="modalUtmCampaign">
+            <input type="hidden" name="origem"        id="modalOrigem">
+
+            <div>
+                <label class="text-[10px] font-bold uppercase tracking-widest text-stone-400 block mb-1.5">Seu Nome</label>
+                <input type="text" name="nome" placeholder="Ex: Carlos Silva" required
+                       class="w-full p-4 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-mv-brown transition">
+            </div>
+
+            <div>
+                <label class="text-[10px] font-bold uppercase tracking-widest text-stone-400 block mb-1.5">WhatsApp</label>
+                <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required
+                       class="w-full p-4 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-mv-brown transition">
+            </div>
+
+            <div>
+                <label class="text-[10px] font-bold uppercase tracking-widest text-stone-400 block mb-1.5">Seu CEP</label>
+                <div class="relative">
+                    <input type="text" name="cep" id="cepInputModal" placeholder="00000-000" required maxlength="9"
+                           class="w-full p-4 bg-stone-50 border border-stone-200 rounded-xl outline-none focus:ring-2 focus:ring-mv-brown transition">
+                    <span id="cepFeedbackModal" class="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-bold"></span>
+                </div>
+                <p id="cepCityModal" class="text-mv-brown text-xs mt-1.5 ml-1 h-4"></p>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-mv-brown text-white font-bold py-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all active:scale-95 mt-2">
+                Ver custo de entrega no WhatsApp →
+            </button>
+
+            <p class="text-stone-400 text-xs text-center">Sem spam. Só o custo do frete.</p>
+        </form>
+    </div>
+</div>
+
+<!-- ================================================================
+     BOTÃO FLUTUANTE WHATSAPP
+     ================================================================ -->
+<a href="https://wa.me/5532991643152?text=Ol%C3%A1%21+Vim+pelo+site+da+Madeira+Velha."
+   onclick="trackEvent('whatsapp_float_click')"
+   class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-400 text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center transition-all hover:scale-110"
+   aria-label="Falar no WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<!-- ================================================================
+     SCRIPTS
+     ================================================================ -->
+<script>
+// ─── CONFIG ────────────────────────────────────────────────────────
+const WEBHOOK_URL  = "https://madeiravelhamoveisrustico.app.n8n.cloud/webhook-test/madeira-velha-lead";
+const WA_NUMBER    = 5532991643152;
+const TICKET_MEDIO = 2500;
+
+// ─── UTM CAPTURE ───────────────────────────────────────────────────
+const _params = new URLSearchParams(window.location.search);
+const utmData = {
+    source:   _params.get('utm_source')   || 'direto',
+    medium:   _params.get('utm_medium')   || '',
+    campaign: _params.get('utm_campaign') || '',
+    origem:   document.referrer           || 'direto'
+};
+
+// Preenche todos os campos hidden de uma vez
+[
+    ['utmSourceSection',   utmData.source],
+    ['utmMediumSection',   utmData.medium],
+    ['utmCampaignSection', utmData.campaign],
+    ['origemSection',      utmData.origem],
+    ['modalUtmSource',     utmData.source],
+    ['modalUtmMedium',     utmData.medium],
+    ['modalUtmCampaign',   utmData.campaign],
+    ['modalOrigem',        utmData.origem],
+].forEach(([id, val]) => { const el = document.getElementById(id); if (el) el.value = val; });
+
+// ─── TRACKING ──────────────────────────────────────────────────────
+function trackEvent(name, label) {
+    if (typeof gtag !== 'undefined') gtag('event', name, { event_label: label || '' });
+}
+
+function trackMLClick(produto, valor) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'purchase_intent', { items: [{ item_name: produto, price: valor, currency: 'BRL' }] });
+    }
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'AddToCart', { content_name: produto, value: valor, currency: 'BRL' });
+    }
+}
+
+function trackLeadSubmit(produto) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'generate_lead', { value: TICKET_MEDIO, currency: 'BRL', event_label: produto });
+    }
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', { value: TICKET_MEDIO, currency: 'BRL', content_name: produto });
+    }
+}
+
+// ─── CEP MASK + VALIDAÇÃO ──────────────────────────────────────────
+async function lookupCep(rawCep, feedbackEl, cityEl) {
+    const cep = rawCep.replace(/\D/g, '');
+    if (cep.length !== 8) { feedbackEl.textContent = ''; cityEl.textContent = ''; return; }
+    feedbackEl.textContent = '...';
+    feedbackEl.style.color = '#aaa';
+    try {
+        const r = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        const d = await r.json();
+        if (d.erro) {
+            feedbackEl.textContent = '✗'; feedbackEl.style.color = '#dc2626';
+            cityEl.textContent = 'CEP não encontrado'; cityEl.style.color = '#dc2626';
+        } else {
+            feedbackEl.textContent = '✓'; feedbackEl.style.color = '#16a34a';
+            cityEl.textContent = `📍 ${d.localidade} – ${d.uf}`; cityEl.style.color = '';
+        }
+    } catch { feedbackEl.textContent = ''; cityEl.textContent = ''; }
+}
+
+function setupCepInput(inputId, feedbackId, cityId) {
+    const inp  = document.getElementById(inputId);
+    const fb   = document.getElementById(feedbackId);
+    const city = document.getElementById(cityId);
+    if (!inp) return;
+    inp.addEventListener('input', e => {
+        let v = e.target.value.replace(/\D/g, '').slice(0, 8);
+        if (v.length > 5) v = v.slice(0, 5) + '-' + v.slice(5);
+        e.target.value = v;
+        if (v.replace('-', '').length === 8) lookupCep(v, fb, city);
+        else { fb.textContent = ''; city.textContent = ''; }
+    });
+}
+
+setupCepInput('cepInputSection', 'cepFeedbackSection', 'cepCitySection');
+setupCepInput('cepInputModal',   'cepFeedbackModal',   'cepCityModal');
+
+// ─── PHONE MASK ────────────────────────────────────────────────────
+document.querySelectorAll('input[name="whatsapp"]').forEach(inp => {
+    inp.addEventListener('input', e => {
+        let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+        if      (v.length > 10) v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+        else if (v.length > 6)  v = `(${v.slice(0,2)}) ${v.slice(2,6)}-${v.slice(6)}`;
+        else if (v.length > 2)  v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+        e.target.value = v;
+    });
+});
+
+// ─── MODAL ─────────────────────────────────────────────────────────
+const modal = document.getElementById('leadModal');
+
+function openLeadModal(produto) {
+    document.getElementById('modalProduto').value       = produto;
+    document.getElementById('modalProductName').textContent = produto;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    trackEvent('begin_checkout', produto);
+    if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', { content_name: produto });
+}
+
+function closeModal() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ─── FORM SUBMIT ───────────────────────────────────────────────────
+function handleFormSubmit(e, formEl) {
+    e.preventDefault();
+    const btn = formEl.querySelector('button[type="submit"]');
+    btn.disabled    = true;
+    btn.textContent = 'Enviando...';
+
+    const raw     = Object.fromEntries(new FormData(formEl).entries());
+    const payload = {
+        ...raw,
+        whatsapp:     raw.whatsapp.replace(/\D/g, ''),
+        cep:          raw.cep.replace(/\D/g, ''),
+        timestamp:    new Date().toISOString(),
+        page_url:     window.location.href,
+        utm_source:   utmData.source,
+        utm_medium:   utmData.medium,
+        utm_campaign: utmData.campaign,
+        origem:       utmData.origem
+    };
+
+    // Fire-and-forget — não bloqueia o redirect
+    fetch(WEBHOOK_URL, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(payload)
+    }).catch(console.error);
+
+    trackLeadSubmit(payload.produto || 'geral');
+
+    const msg = encodeURIComponent(
+        `Olá! Sou ${payload.nome}, vim pelo site da Madeira Velha.\n\n` +
+        `Produto: *${payload.produto || 'não especificado'}*\n` +
+        `CEP: *${raw.cep}*\n\n` +
+        `Pode me informar o custo do frete?`
+    );
+
+    // 350ms para garantir que fetch e pixels disparem antes da navegação
+    setTimeout(() => { window.location.href = `https://wa.me/${WA_NUMBER}?text=${msg}`; }, 350);
+}
+
+document.getElementById('n8nForm').addEventListener('submit', e => handleFormSubmit(e, document.getElementById('n8nForm')));
+document.getElementById('leadFormSection').addEventListener('submit', e => handleFormSubmit(e, document.getElementById('leadFormSection')));
+
+// ─── FAQ ACCORDION ─────────────────────────────────────────────────
+function toggleFaq(item) {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+}
+
+// ─── INTERSECTION OBSERVER ─────────────────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ─── PRODUTOS DINÂMICOS (Mercado Livre via /api/produtos) ──────────
+function formatPreco(valor) {
+    return valor
+        ? 'R$ ' + valor.toLocaleString('pt-BR', { minimumFractionDigits: 2 })
+        : '';
+}
+
+function cardHTML(p) {
+    const titulo  = p.titulo || 'Sem título';
+    const preco   = formatPreco(p.preco);
+    const imagem  = p.imagem || '';
+    const link    = p.link   || '#';
+    const id      = p.id     || '';
+
+    return `
+    <div class="product-card bg-white rounded-3xl overflow-hidden shadow-premium group fade-in"
+         onmouseenter="trackEvent('product_hover','${titulo.replace(/'/g,"\\'")}')">
+        <div class="h-72 overflow-hidden relative bg-stone-100">
+            <img src="${imagem}" loading="lazy"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 alt="${titulo}"
+                 onerror="this.style.display='none'">
+            <div class="absolute top-4 right-4 bg-mv-black text-white px-3 py-1 text-[10px] font-bold tracking-widest rounded-full uppercase">Obra Única</div>
+        </div>
+        <div class="p-7">
+            <h3 class="text-xl font-bold mb-1 leading-snug">${titulo}</h3>
+            <p class="text-mv-brown text-xs font-semibold uppercase tracking-wider mb-3">Peroba Rosa de Demolição</p>
+            ${preco ? `<p class="text-2xl font-bold mb-5">${preco}</p>` : ''}
+            <div class="space-y-3 mt-auto">
+                <a href="${link}" target="_blank" rel="noopener"
+                   onclick="trackMLClick('${titulo.replace(/'/g,"\\'")}', ${p.preco || 0})"
+                   class="block w-full bg-mv-black text-white text-center py-4 rounded-xl font-bold hover:bg-zinc-800 transition">
+                    Garantir no Mercado Livre
                 </a>
+                <button onclick="openLeadModal('${titulo.replace(/'/g,"\\'")}');"
+                        class="block w-full border-2 border-mv-brown text-mv-brown text-center py-3 rounded-xl font-bold hover:bg-mv-brown hover:text-white transition">
+                    Consultar Frete para meu CEP
+                </button>
             </div>
         </div>
-    </section>
+    </div>`;
+}
 
-    <section id="produtos" class="py-24">
-        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold text-mv-black mb-6">Peças Exclusivas em Destaque</h2>
-            <p class="text-xl text-stone-500 max-w-xl mx-auto font-light">Explore a nossa seleção de relíquias em madeira maciça, ideais para o seu lar ou área gourmet.</p>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image_5.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Namoradeira refinada">
-                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">SOFISTICAÇÃO</div>
-                </div>
-                <div class="p-8 flex-grow flex flex-col">
-                    <h3 class="text-2xl font-bold text-mv-black mb-2">Namoradeira Demolição Elite</h3>
-                    <p class="text-stone-500 mb-6 text-sm flex-grow">Design refinado com encostos em ferro forjado e madeira rica.</p>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
-                        <a href="LINK_ML_NAMORADEIRA" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
-                    </div>
-                </div>
+function atualizarSelectProdutos(produtos) {
+    document.querySelectorAll('select[name="produto"]').forEach(sel => {
+        const atual = sel.value;
+        sel.innerHTML = '<option value="">Selecione uma peça...</option>'
+            + produtos.map(p => `<option value="${p.titulo}">${p.titulo}</option>`).join('')
+            + '<option value="Outro / Personalizado">Outro / Personalizado</option>';
+        sel.value = atual;
+    });
+}
+
+async function carregarProdutos() {
+    const grid = document.getElementById('produtos-grid');
+    try {
+        const res  = await fetch('/api/produtos');
+        const data = await res.json();
+
+        if (!data.ok || !data.produtos.length) throw new Error('sem produtos');
+
+        grid.innerHTML = data.produtos.map(cardHTML).join('');
+        atualizarSelectProdutos(data.produtos);
+
+        // Registrar animações nos novos cards
+        grid.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    } catch {
+        // Fallback: mantém os skeletons substituídos pelos cards estáticos originais
+        grid.innerHTML = `
+        <div class="product-card bg-white rounded-3xl overflow-hidden shadow-premium group fade-in">
+            <div class="h-72 bg-stone-200 flex items-center justify-center">
+                <img src="mesa_gourmet.jpg" class="w-full h-full object-cover" alt="Conjunto de Mesa">
             </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image_3.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Mesa de jantar rústica com azulejos">
-                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">ÁREA GOURMET</div>
+            <div class="p-7">
+                <h3 class="text-xl font-bold mb-1">Conjunto de Mesa com Bancos</h3>
+                <p class="text-mv-brown text-xs font-semibold uppercase tracking-wider mb-4">Peroba Rosa de Demolição</p>
+                <div class="space-y-3">
+                    <a href="https://www.mercadolivre.com.br/conjunto-mesa-de-peroba-rosa-para-area-externa-250x100/up/MLBU3953364147"
+                       target="_blank" class="block w-full bg-mv-black text-white text-center py-4 rounded-xl font-bold hover:bg-zinc-800 transition">
+                        Garantir no Mercado Livre
+                    </a>
+                    <button onclick="openLeadModal('Conjunto de Mesa com Bancos')"
+                            class="block w-full border-2 border-mv-brown text-mv-brown text-center py-3 rounded-xl font-bold hover:bg-mv-brown hover:text-white transition">
+                        Consultar Frete para meu CEP
+                    </button>
                 </div>
-                <div class="p-8 flex-grow flex flex-col">
-                    <h3 class="text-2xl font-bold text-mv-black mb-2">Mesa Jantar Gourmet Hidráulica</h3>
-                    <p class="text-stone-500 mb-6 text-sm flex-grow">Tampo rico com azulejos hidráulicos portugueses e madeira maciça.</p>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
-                        <a href="LINK_ML_MESA" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-stone-100 flex flex-col">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="image_2.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Par de cadeiras Adirondack no jardim">
-                    <div class="absolute top-4 right-4 bg-mv-brown text-white px-4 py-1.5 rounded-full text-xs font-bold tracking-wider">EXTERIOR</div>
-                </div>
-                <div class="p-8 flex-grow flex flex-col">
-                    <h3 class="text-2xl font-bold text-mv-black mb-2">Par de Adirondack Relax</h3>
-                    <p class="text-stone-500 mb-6 text-sm flex-grow">Clássicas cadeiras Adirondack em par, madeira de lei tratada para jardim.</p>
-                    <div class="flex justify-between items-center mt-auto">
-                        <span class="text-xl font-bold text-mv-brown">Sob Consulta</span>
-                        <a href="LINK_ML_ADIRONDACK_PAR" class="text-mv-brown font-semibold border-b-2 border-mv-brown pb-1">Ver no ML</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-24 bg-mv-grey-light wood-texture-bg">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-             <div class="space-y-8">
-                <h2 class="text-4xl md:text-5xl font-bold text-mv-black">Crie Espaços Inesquecíveis</h2>
-                <p class="text-lg text-stone-600 leading-relaxed font-light">
-                    Os móveis MV se adaptam. Do ambiente sofisticado de uma sala de estar (namoradeira image_5.png) à varanda gourmet vibrante (mesa image_3.png) ou ao jardim relaxante (Adirondack image_2.png), nossas peças criam o palco perfeito para momentos memoráveis. Use e abuse das texturas e traga a assinatura MV para a sua vida.
-                </p>
-                <div class="bg-white p-8 rounded-2xl shadow-xl border border-stone-100">
-                    <p class="text-stone-700 italic font-light mb-4">"A mesa rústica gourmet com os azulejos hidráulicos (image_3.png) foi a atração da nossa varanda. A qualidade da madeira é impressionante e o atendimento da MV foi exemplar. Recomendo muito!"</p>
-                    <p class="font-bold text-mv-black text-sm">João P., Cliente ML ⭐⭐⭐⭐⭐</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-6">
-                <img src="image_3.png" alt="Mesa gourmet ambientada" class="rounded-xl shadow-md col-span-2">
-                <img src="image_2.png" alt="Cadeiras de jardim ambientadas" class="rounded-xl shadow-md">
-                <img src="image_1.png" alt="Cadeira de jardim individual ambientada" class="rounded-xl shadow-md">
             </div>
         </div>
-    </section>
-
-    <footer id="contato" class="bg-mv-black text-stone-300 py-20 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-            
-            <div class="space-y-4">
-                <img src="logo.png" alt="Logo Móveis MV" class="h-16 w-auto">
-                <p class="text-sm font-light leading-relaxed">Madeira Rústica de Luxo | MV. Tradição, Alma e Design Sustentável.</p>
-                <p class="text-xs text-stone-500">© 2026 Móveis Rústicos MV. Todos os direitos reservados.</p>
+        <div class="product-card bg-white rounded-3xl overflow-hidden shadow-premium group fade-in">
+            <div class="h-72 overflow-hidden"><img src="cama_turca.jpg" class="w-full h-full object-cover" alt="Cama Turca"></div>
+            <div class="p-7">
+                <h3 class="text-xl font-bold mb-1">Cama Turca King Size</h3>
+                <p class="text-mv-brown text-xs font-semibold uppercase tracking-wider mb-4">Peroba Rosa Maciça</p>
+                <div class="space-y-3">
+                    <a href="https://www.mercadolivre.com.br/cama-turca-casal-madeira-macica-c-gaveta-e-cabeceira-king/up/MLBU3027631516"
+                       target="_blank" class="block w-full bg-mv-black text-white text-center py-4 rounded-xl font-bold hover:bg-zinc-800 transition">
+                        Garantir no Mercado Livre
+                    </a>
+                    <button onclick="openLeadModal('Cama Turca King Size')"
+                            class="block w-full border-2 border-mv-brown text-mv-brown text-center py-3 rounded-xl font-bold hover:bg-mv-brown hover:text-white transition">
+                        Consultar Frete para meu CEP
+                    </button>
+                </div>
             </div>
-            
-            <div class="space-y-4">
-                <h4 class="text-white text-xl mb-6">Explorar</h4>
-                <a href="#hero" class="block hover:text-mv-brown transition text-sm">Coleção</a>
-                <a href="LINK_SUA_LOJA_MERCADO_LIVRE" class="block hover:text-mv-brown transition text-sm">Mercado Livre</a>
-                <a href="#sobre" class="block hover:text-mv-brown transition text-sm">Sustentabilidade</a>
-            </div>
-
-            <div class="space-y-4">
-                <h4 class="text-white text-xl mb-6">Contato</h4>
-                <p class="text-sm">WhatsApp: (XX) XXXXX-XXXX</p>
-                <p class="text-sm mt-2">Email: contato@moveisrusticosmv.com.br</p>
-                <p class="text-sm mt-2 text-stone-500">Enviamos para todo o Brasil.</p>
-            </div>
-
-             <div class="space-y-4">
-                <h4 class="text-white text-xl mb-6">Nossa Oficina</h4>
-                <p class="text-sm">Rua dos Marceneiros, 123</p>
-                <p class="text-sm">Área Industrial - CEP XXXXX-XXX</p>
-                <p class="text-sm mt-2">Agende uma visita!</p>
-            </div>
-
         </div>
-    </footer>
+        <div class="product-card bg-white rounded-3xl overflow-hidden shadow-premium group fade-in">
+            <div class="h-72 overflow-hidden"><img src="rack_oval.jpg" class="w-full h-full object-cover" alt="Rack Oval"></div>
+            <div class="p-7">
+                <h3 class="text-xl font-bold mb-1">Rack Oval em Peroba Rosa</h3>
+                <p class="text-mv-brown text-xs font-semibold uppercase tracking-wider mb-4">Peroba Rosa Tratada</p>
+                <div class="space-y-3">
+                    <a href="https://www.mercadolivre.com.br/rack-madeira-macica-demolicao-aparador-sala-peroba-rosa/up/MLBU3013797001"
+                       target="_blank" class="block w-full bg-mv-black text-white text-center py-4 rounded-xl font-bold hover:bg-zinc-800 transition">
+                        Garantir no Mercado Livre
+                    </a>
+                    <button onclick="openLeadModal('Rack Oval em Peroba Rosa')"
+                            class="block w-full border-2 border-mv-brown text-mv-brown text-center py-3 rounded-xl font-bold hover:bg-mv-brown hover:text-white transition">
+                        Consultar Frete para meu CEP
+                    </button>
+                </div>
+            </div>
+        </div>`;
+        grid.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    }
+}
 
+carregarProdutos();
+</script>
 </body>
 </html>
