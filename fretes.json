@@ -1,0 +1,228 @@
+{
+  "_leia_me": "Gerado a partir de Fretes-Madeira-Velha.xlsx. Modelo de frete fixo por estado.",
+  "_atualizado_em": "2026-09-15",
+  "_como_editar": "Mude 'valor' e 'prazo' de cada faixa. Nao altere cepInicio/cepFim.",
+  "margem": 0.0,
+  "origem": {
+    "cidade": "Santa Cruz de Minas",
+    "uf": "MG",
+    "cep": "36328000"
+  },
+  "faixas": [
+    {
+      "estado": "Minas Gerais",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "cepInicio": 30000000,
+      "cepFim": 39999999,
+      "valor": 350.0,
+      "prazo": "30"
+    },
+    {
+      "estado": "São Paulo",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": 1000000,
+      "cepFim": 19999999,
+      "valor": 350.0,
+      "prazo": "30"
+    },
+    {
+      "estado": "Rio de Janeiro",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "cepInicio": 20000000,
+      "cepFim": 28999999,
+      "valor": 450.0,
+      "prazo": "30"
+    },
+    {
+      "estado": "Espírito Santo",
+      "uf": "ES",
+      "regiao": "Sudeste",
+      "cepInicio": 29000000,
+      "cepFim": 29999999,
+      "valor": 450.0,
+      "prazo": "30"
+    },
+    {
+      "estado": "Paraná",
+      "uf": "PR",
+      "regiao": "Sul",
+      "cepInicio": 80000000,
+      "cepFim": 87999999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Santa Catarina",
+      "uf": "SC",
+      "regiao": "Sul",
+      "cepInicio": 88000000,
+      "cepFim": 89999999,
+      "valor": 600.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Rio Grande do Sul",
+      "uf": "RS",
+      "regiao": "Sul",
+      "cepInicio": 90000000,
+      "cepFim": 99999999,
+      "valor": 650.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Distrito Federal",
+      "uf": "DF",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 70000000,
+      "cepFim": 72799999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Distrito Federal",
+      "uf": "DF",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 73000000,
+      "cepFim": 73699999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Goiás",
+      "uf": "GO",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 72800000,
+      "cepFim": 72999999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Goiás",
+      "uf": "GO",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 73700000,
+      "cepFim": 76799999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Mato Grosso",
+      "uf": "MT",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 78000000,
+      "cepFim": 78899999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Mato Grosso do Sul",
+      "uf": "MS",
+      "regiao": "Centro-Oeste",
+      "cepInicio": 79000000,
+      "cepFim": 79999999,
+      "valor": 550.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Bahia",
+      "uf": "BA",
+      "regiao": "Nordeste",
+      "cepInicio": 40000000,
+      "cepFim": 48999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Sergipe",
+      "uf": "SE",
+      "regiao": "Nordeste",
+      "cepInicio": 49000000,
+      "cepFim": 49999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Pernambuco",
+      "uf": "PE",
+      "regiao": "Nordeste",
+      "cepInicio": 50000000,
+      "cepFim": 56999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Alagoas",
+      "uf": "AL",
+      "regiao": "Nordeste",
+      "cepInicio": 57000000,
+      "cepFim": 57999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Paraíba",
+      "uf": "PB",
+      "regiao": "Nordeste",
+      "cepInicio": 58000000,
+      "cepFim": 58999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Rio Grande do Norte",
+      "uf": "RN",
+      "regiao": "Nordeste",
+      "cepInicio": 59000000,
+      "cepFim": 59999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Ceará",
+      "uf": "CE",
+      "regiao": "Nordeste",
+      "cepInicio": 60000000,
+      "cepFim": 63999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Piauí",
+      "uf": "PI",
+      "regiao": "Nordeste",
+      "cepInicio": 64000000,
+      "cepFim": 64999999,
+      "valor": 800.0,
+      "prazo": "35"
+    },
+    {
+      "estado": "Maranhão",
+      "uf": "MA",
+      "regiao": "Nordeste",
+      "cepInicio": 65000000,
+      "cepFim": 65999999,
+      "valor": 800.0,
+      "prazo": "35"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Conjunto de Mesa com Bancos",
+      "dimensoes": "250 x 100 x 78",
+      "link": "https://www.mercadolivre.com.br/conjunto-mesa-de-peroba-rosa-para-area-externa-250x100/up/MLBU3953364147"
+    },
+    {
+      "nome": "Cama Turca King Size",
+      "dimensoes": "200 x 195 x 40",
+      "link": "https://www.mercadolivre.com.br/cama-turca-casal-madeira-macica-c-gaveta-e-cabeceira-king/up/MLBU3027631516"
+    },
+    {
+      "nome": "Rack Oval em Peroba Rosa",
+      "dimensoes": "180 x 45 x 50",
+      "link": "https://www.mercadolivre.com.br/rack-madeira-macica-demolicao-aparador-sala-peroba-rosa/up/MLBU3013797001"
+    }
+  ]
+}
